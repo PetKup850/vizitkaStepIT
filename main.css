@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 0.5rem;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+}
+.card {
+  width: 21.875rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.25rem;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 0.5rem;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("pozadi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 0;
+}
+.header,
+.content {
+  position: relative;
+  z-index: 1;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  max-width: 8.75rem;
+  margin-left: 4rem;
+  float: right;
+}
+.header h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  margin-bottom: 0.125rem;
+}
+.content p {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
